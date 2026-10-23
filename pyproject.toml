@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "apricorn"
+version = "0.1.0"
+description = "Project Apricorn — STGNN-guided PCB auto-router"
+requires-python = ">=3.11"
+dependencies = [
+    "torch>=2.0.0",
+    "torch_geometric>=2.4.0",
+    "numpy>=1.24.0",
+    "scipy>=1.10.0",
+    "shapely>=2.0.0",
+    "rtree>=1.0.0",
+    "networkx>=3.0",
+    "fastapi>=0.100.0",
+    "uvicorn>=0.22.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4.0", "httpx>=0.24.0"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["apricorn*"]

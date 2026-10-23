@@ -1,0 +1,44 @@
+{
+  "drc": "real",
+  "max_epochs": 15,
+  "n_boards": 40,
+  "n_common_solved": 3,
+  "summary": {
+    "uniform": {
+      "boards": 40,
+      "success_rate": 0.125,
+      "mean_epochs": 13.8,
+      "mean_final_drc": 573.875,
+      "mean_seconds": 9.567144042253494,
+      "common_mean_wirelength": 742.04312201341,
+      "common_mean_vias": 102.33333333333333
+    },
+    "random-mock": {
+      "boards": 40,
+      "success_rate": 0.075,
+      "mean_epochs": 14.125,
+      "mean_final_drc": 585.55,
+      "mean_seconds": 5.3280040383338925,
+      "common_mean_wirelength": 731.7413209279379,
+      "common_mean_vias": 99.66666666666667
+    },
+    "stgnn-untrained": {
+      "boards": 40,
+      "success_rate": 0.175,
+      "mean_epochs": 13.55,
+      "mean_final_drc": 641.1,
+      "mean_seconds": 5.768287819623947,
+      "common_mean_wirelength": 771.6585226853689,
+      "common_mean_vias": 103.0
+    },
+    "stgnn-trained": {
+      "boards": 40,
+      "success_rate": 0.15,
+      "mean_epochs": 13.9,
+      "mean_final_drc": 591.4,
+      "mean_seconds": 5.792444890737533,
+      "common_mean_wirelength": 779.8478553295135,
+      "common_mean_vias": 112.33333333333333
+    }
+  }
+}

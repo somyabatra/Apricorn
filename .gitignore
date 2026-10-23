@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+*.log
+.DS_Store
+# generated data (recreated by the training / evaluation commands)
+data/
+*.pkl
+# NOTE: checkpoints/stgnn_v1.pt is intentionally NOT ignored so the team can share the trained model.
